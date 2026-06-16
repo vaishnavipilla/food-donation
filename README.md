@@ -18,3 +18,5 @@ Brief description of the project.
 - src/
 - assets/
 - docs/
+- ## Homepage Module
+Added homepage design and navigation structure.
