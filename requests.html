@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Request List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <h2>ReliefLink</h2>
+
+        <ul>
+            <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+    </nav>
+
+    <h1 class="dashboard-title">
+        Requests List
+    </h1>
+
+    <div id="requestList" class="dashboard"></div>
+
+    <script>
+
+        let requests =
+            JSON.parse(localStorage.getItem("requests")) || [];
+
+        let html = "";
+
+        requests.forEach(r => {
+
+            html += `
+<div class="card">
+
+<h3>${r.type}</h3>
+
+<p><b>People:</b> ${r.people}</p>
+
+<p><b>Location:</b> ${r.location}</p>
+
+</div>
+`;
+
+        });
+
+        document.getElementById("requestList").innerHTML = html;
+
+    </script>
+
+</body>
+
+</html>

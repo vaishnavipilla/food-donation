@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Food</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <h2>ReliefLink</h2>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="request.html">Request Help</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+    </nav>
+
+    <div class="form-container">
+
+        <h1>Donate Food</h1>
+
+        <form id="donationForm" onsubmit="saveDonation(event)">
+
+            <input id="donor" type="text" placeholder="Donor Name" required>
+
+            <input id="food" type="text" placeholder="Food Type" required>
+
+            <input id="quantity" type="text" placeholder="Quantity" required>
+
+            <input id="location" type="text" placeholder="Location" required>
+
+            <button type="submit">
+                Submit Donation
+            </button>
+
+        </form>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

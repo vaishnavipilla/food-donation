@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Request Help</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <h2>ReliefLink</h2>
+
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+    </nav>
+
+    <div class="form-container">
+
+        <h1>Request Assistance</h1>
+
+        <form onsubmit="saveRequest(event)">
+
+            <select id="requestType" required>
+                <option value="">Select Request</option>
+                <option>Normal Food Request</option>
+                <option>Disaster Relief Request</option>
+            </select>
+
+            <input type="number" id="people" placeholder="People Affected" required>
+
+            <input type="text" id="location" placeholder="Location" required>
+
+            <button type="submit">
+                Send Request
+            </button>
+
+        </form>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Donation List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <h2>ReliefLink</h2>
+    </nav>
+
+    <h1 class="dashboard-title">
+        Donation List
+    </h1>
+
+    <div id="donationList" class="dashboard"></div>
+
+    <script>
+
+        let donations =
+            JSON.parse(localStorage.getItem("donations")) || [];
+
+        let html = "";
+
+        donations.forEach(d => {
+
+            html += `
+<div class="card">
+<h3>${d.food}</h3>
+<p><b>Donor:</b> ${d.donor}</p>
+<p><b>Quantity:</b> ${d.quantity}</p>
+<p><b>Location:</b> ${d.location}</p>
+</div>
+`;
+
+        });
+
+        document.getElementById("donationList").innerHTML = html;
+
+    </script>
+
+</body>
+
+</html>
