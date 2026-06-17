@@ -20,3 +20,9 @@ Brief description of the project.
 - docs/
 - ## Homepage Module
 Added homepage design and navigation structure.
+## Team Contributions
+
+- Vaishnavi – GitHub setup, Git workflow, deployment, documentation
+- Member 2 – Homepage development
+- Member 3 – Donation module development
+- Member 4 – Volunteer module development and testing
